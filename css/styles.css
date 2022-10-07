@@ -14,10 +14,8 @@ body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  background-color: var(--fon);
-  width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--text-color-button-hover);
+  
 }
 
 h1,
@@ -53,8 +51,11 @@ a {
   padding-bottom: 94px;
 }
 /* Хедер */
+.header {
+border-bottom: 1px solid #ececec;
+}
 header .container {
-  border-bottom: 1px solid #ececec;
+  
   display: flex;
   align-items: center;
 }
@@ -160,10 +161,13 @@ ul {
 
 .qualities-list {
   display: flex;
+  gap: 30px;
 }
-.qualities-list .qualities-item + .qualities-item {
-  margin-left: 30px;
+
+.qualities-item {
+  width: 270px;
 }
+
 
 .qualities-titles {
   font-size: 14px;
@@ -171,6 +175,7 @@ ul {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .qualities-text {
   line-height: 1.71;
   color: var(--p-color-index);
@@ -182,8 +187,9 @@ ul {
 }
 .work-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
+
 .section-title {
   font-size: 36px;
   line-height: 1.17;
@@ -197,7 +203,7 @@ ul {
 }
 .command-member {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 
   /* margin-left: auto;
   margin-right: auto; */
@@ -248,8 +254,8 @@ ul {
 }
 .project-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 30px;
 }
 /* Активна кнопка порфоліо */
 
@@ -261,11 +267,11 @@ ul {
 /* Проекти портфоліо*/
 .project-item {
   background-color: var(--text-color-button-hover);
-  border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
 }
 .project-name-text {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .project-name {
   font-size: 18px;
@@ -281,12 +287,12 @@ ul {
 
 /* Футер */
 
-footer {
+.footer {
   background-color: var(--section-slogan-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-address {
+.address {
   font-style: normal;
   margin-top: 20px;
 }
