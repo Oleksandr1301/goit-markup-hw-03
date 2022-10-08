@@ -15,7 +15,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--text-color-button-hover);
-  
 }
 
 h1,
@@ -26,23 +25,26 @@ p {
   margin: 0;
   padding: 0;
 }
+
 ul,
 ol {
   margin: 0;
   padding-left: 0;
 }
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-header a {
-  padding: 24px 0px;
-}
+
 a {
   text-decoration: none;
 }
@@ -52,10 +54,9 @@ a {
 }
 /* Хедер */
 .header {
-border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 header .container {
-  
   display: flex;
   align-items: center;
 }
@@ -126,12 +127,14 @@ ul {
 /* Головна сторінка*/
 
 /* Секція №1 */
+
 .section-slogan {
   background-color: var(--section-slogan-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 .slogan {
   font-weight: 900;
   font-size: 44px;
@@ -142,6 +145,7 @@ ul {
   margin-right: auto;
   width: 696px;
 }
+
 .studio-button {
   font-weight: 700;
   font-size: 16px;
@@ -168,7 +172,6 @@ ul {
   width: 270px;
 }
 
-
 .qualities-titles {
   font-size: 14px;
   line-height: 1.14;
@@ -182,9 +185,11 @@ ul {
 }
 
 /* Секція №3 */
+
 .work {
   padding-top: 0px;
 }
+
 .work-list {
   display: flex;
   gap: 30px;
@@ -198,16 +203,16 @@ ul {
 }
 
 /* Секція №4 */
+
 .command {
   background-color: var(--background-color-button);
 }
+
 .command-member {
   display: flex;
   gap: 30px;
-
-  /* margin-left: auto;
-  margin-right: auto; */
 }
+
 .member {
   background-color: var(--text-color-button-hover);
   text-align: center;
@@ -216,6 +221,7 @@ ul {
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
 }
+
 .command-name {
   font-weight: 500;
   font-size: 16px;
@@ -223,6 +229,7 @@ ul {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .command-position {
   font-size: 16px;
   line-height: 1.19;
@@ -232,14 +239,17 @@ ul {
 /* Портфоліо */
 
 /* Кнопки портфоліо*/
+
 .button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .button-list .button-item + .button-item {
   margin-left: 8px;
 }
+
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -252,11 +262,13 @@ ul {
   padding: 6px 25px;
   border: none;
 }
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
+
 /* Активна кнопка порфоліо */
 
 .portfolio-button-all {
@@ -265,19 +277,23 @@ ul {
 }
 
 /* Проекти портфоліо*/
+
 .project-item {
   background-color: var(--text-color-button-hover);
   width: calc((100% - 60px) / 3);
 }
+
 .project-name-text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
+
 .project-name {
   font-size: 18px;
   line-height: 2;
   color: var(--text-color);
 }
+
 .project-text {
   font-size: 16px;
   line-height: 1.88;
@@ -292,6 +308,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .address {
   font-style: normal;
   margin-top: 20px;
@@ -309,24 +326,28 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+
 .logo-studio-futer {
   color: var(--text-color-button-hover);
 }
+
 .logo-web-futer {
   color: var(--logo-button-contact-color);
 }
 
 /* Контакти */
 
-address li + li {
+.address li + li {
   margin-top: 9px;
 }
+
 .map,
 .contact-phone-number-futer,
 .email-futer {
   line-height: 1.71;
   color: var(--color-futer);
 }
+
 .map {
   color: var(--text-color-button-hover);
 }
